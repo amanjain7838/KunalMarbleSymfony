@@ -1,0 +1,226 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">    
+    <link rel="stylesheet" href="css/touch-touch.css">
+    <link rel="stylesheet" href="css/rd-mailform.css">
+    <link rel="stylesheet" href="css/google-map.css">
+    <link href='//fonts.googleapis.com/css?family=Playfair+Display%7CMontserrat:400,700' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="css/theme.css">
+
+{% endblock %}
+{% block body %}
+
+<div class="page">
+    {% include 'header.html.twig' %}
+
+    <main class="page-content">
+        <section class="well">
+            <div class="camera_container">
+                <div id="camera" class="camera_wrap ">
+                    <div data-src="images/page-01_slide01.jpg">
+                        <div class="camera_caption fadeIn">
+                            <div class="col-md-offset-1 col-lg-offset-5  bg-absolute">
+                                <h1 class="devider devider-position-left devider-xs devider-primary">
+                                    Your design <br> ideas in stone
+                                </h1>
+                                <h4>
+                                    Inspired by nature
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-src="images/page-01_slide02.jpg">
+                        <div class="camera_caption fadeIn">
+                            <div class="col-md-offset-1 col-lg-offset-5 bg-absolute">
+                                <h1 class="devider devider-position-left devider-xs  devider-primary">
+                                    Natural stone <br> products
+                                </h1>
+                                <h4>
+                                    Irreproachable style
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Shortly about us -->
+        <section class="well-lg position-relative">
+            <div class="image-wrap image-wrap-img-1"></div>
+            <div class="container offset-1">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-offset-4 col-md-8 inset-1">
+                        <h1>Shortly about us</h1>
+                        <p class="heading-4 devider devider-position-left devider-position-left--1 devider-lg devider-secondary">
+                            Thank you for visiting the Kunal Marble website. Here you will find a brief history about
+                            us.</p>
+                    </div>
+                    <div class="col-md-offset-4 col-md-4 offset-2 inset-1">
+                        <p>
+                            Our company has blended years of experience and craftsmanship to provide a unique
+                            combination of natural beauty and durable products. We offer premium quality stone products
+                            that not only guarantee long-term performance and timeless beauty, but also cost savings and
+                            a smart long-term investment.
+                        </p>
+                    </div>
+                    <div class="col-md-4 offset-2 inset-1">
+                        <p>
+                            Using advanced and sustainable production methods, our company’s stone products are
+                            beneficial to the environment as well as the economy.
+                        </p>
+                        <a href="callto:#" class="btn btn-md btn-default">Call us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Shortly about us-->
+
+        <!-- Products -->
+        <section>
+            <div class="container">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-6 inset-1 offset-1 inset-3">
+                        <h1>Products</h1>
+                        <p  class="heading-4 devider devider-position-left devider-position-left--2 devider-xs devider-xs--1 devider-secondary">
+                            Our stone products will add natural texture & style to your interior or exterior design.
+                        </p>
+                    </div>
+
+                    <!--Products-->
+                    <div class="col-xs-6 col-md-3 offset-3">
+                        <div class="product">
+                            <img src="images/page-01_img04.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 offset-6">
+                        <div class="product">
+                            <img src="images/page-01_img06.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-xs-clear offset-4 offset-6">
+                        <div class="product">
+                            <img src="images/page-01_img02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 offset-5 offset-6">
+                        <div class="product">
+                            <img src="images/page-01_img03.jpg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-sm-clear col-md-release offset-4 offset-6">
+                        <div class="product">
+                            <img src="images/page-01_img05.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 offset-5 offset-6 offset-7">
+                        <div class="product">
+                            <img src="images/page-01_img07.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--Products-->
+
+                </div>
+            </div>
+        </section>
+        <!-- END Products-->
+
+<br><br>
+        <!-- Contact us -->
+        <section class="well-md position-relative">
+            <div class="container">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-7 inset-1">
+                        <h1>
+                            Contact us
+                        </h1>
+
+                        <!-- RD Mailform -->
+                        <form class='rd-mailform devider devider-lg devider-lg--1 devider-position-left devider-position-left-4 devider-secondary'
+                              method="post" action="bat/rd-mailform.php">
+
+                            <!-- RD Mailform Type -->
+                            <input type="hidden" name="form-type" value="contact"/>
+
+                            <!-- END RD Mailform Type -->
+                            <fieldset>
+                                <label data-add-placeholder>
+                                    <input type="text"
+                                           name="name"
+                                           placeholder="Name"
+                                           data-constraints="@NotEmpty @LettersOnly "/>
+                                </label>
+
+                                <label data-add-placeholder>
+                                    <input type="text"
+                                           name="email"
+                                           placeholder="Email"
+                                           data-constraints="@NotEmpty @Email "/>
+                                </label>
+
+                                <label data-add-placeholder>
+                                    <input type="text"
+                                           name="company"
+                                           placeholder="Company"
+                                           data-constraints=""/>
+                                </label>
+
+                                <label data-add-placeholder>
+                                    <textarea name="message" placeholder="Message"
+                                              data-constraints="@NotEmpty"></textarea>
+                                </label>
+
+                                <div class="mfControls btn-group">
+                                    <button class="btn btn-lg btn-md btn-default" type="submit">Send message</button>
+                                </div>
+                                <div class="mfInfo"></div>
+                            </fieldset>
+                        </form>
+                        <!-- END RD Mailform -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Google map-->
+            <div class="map">
+                <div id="google-map" class="map_model"></div>
+                <ul class="map_locations">
+                    <li data-y="28.558692" data-x="77.370149">
+                        <p>D14,main marble market, <br>
+                            Dadri Main Road, barola, Sector 49, Block B, Sector 48, Noida.</p>
+
+                    </li>
+                </ul>
+            </div>
+            <!--Google map-->
+
+        </section>
+        <!-- END Contact us-->
+
+    </main>
+    {% include 'footer.html.twig' %}
+</div>
+{% endblock %}
+
+
+{% block javascripts %}
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src='js/device.min.js'></script>
+    <script src="js/script.js"></script>
+
+  <!-- begin olark code -->
+  <script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/
+ 
+  /* custom configuration goes here (www.olark.com/documentation) */
+  
+  /*]]>*/</script>
+{% endblock %}
